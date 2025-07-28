@@ -6,20 +6,71 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5051F7002E36631A00D36EBF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5051F6FF2E36631A00D36EBF /* FirebaseAuth */; };
+		5051F7022E36632400D36EBF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5051F7012E36632400D36EBF /* FirebaseFirestore */; };
+		5051F7042E36632D00D36EBF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5051F7032E36632D00D36EBF /* FirebaseStorage */; };
+		5051F7062E36634800D36EBF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5051F7052E36634800D36EBF /* FirebaseCore */; };
+		50E131F12E32E9590076071D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50E131F02E32E9580076071D /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5051F73C2E36E69600D36EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506DF6EC2E2469A50051B826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506DF6F32E2469A50051B826;
+			remoteInfo = SmartER;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4A5A53C4ECF2C0C4A2FB3382 /* Pods_SmartER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5051F6FC2E362E3D00D36EBF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5051F7382E36E69600D36EBF /* SmartERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506DF6F42E2469A50051B826 /* SmartER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E131F02E32E9580076071D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		506DF7BF2E2AE4D10051B826 /* Exceptions for "SmartER" folder in "SmartER" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 506DF6F32E2469A50051B826 /* SmartER */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		5051F7392E36E69600D36EBF /* SmartERTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SmartERTests;
+			sourceTree = "<group>";
+		};
 		506DF6F62E2469A50051B826 /* SmartER */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				506DF7BF2E2AE4D10051B826 /* Exceptions for "SmartER" folder in "SmartER" target */,
+			);
 			path = SmartER;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		506DF6F12E2469A50051B826 /* Frameworks */ = {
+		5051F6FE2E36630F00D36EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5051F7002E36631A00D36EBF /* FirebaseAuth in Frameworks */,
+				5051F7022E36632400D36EBF /* FirebaseFirestore in Frameworks */,
+				5051F7062E36634800D36EBF /* FirebaseCore in Frameworks */,
+				5051F7042E36632D00D36EBF /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5051F7352E36E69600D36EBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,8 +83,11 @@
 		506DF6EB2E2469A50051B826 = {
 			isa = PBXGroup;
 			children = (
+				50E131F02E32E9580076071D /* GoogleService-Info.plist */,
 				506DF6F62E2469A50051B826 /* SmartER */,
+				5051F7392E36E69600D36EBF /* SmartERTests */,
 				506DF6F52E2469A50051B826 /* Products */,
+				FEF3464A0B08CB0C86D19CEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,20 +95,53 @@
 			isa = PBXGroup;
 			children = (
 				506DF6F42E2469A50051B826 /* SmartER.app */,
+				5051F7382E36E69600D36EBF /* SmartERTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF3464A0B08CB0C86D19CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5051F6FC2E362E3D00D36EBF /* XCTest.framework */,
+				4A5A53C4ECF2C0C4A2FB3382 /* Pods_SmartER.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5051F7372E36E69600D36EBF /* SmartERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5051F73E2E36E69600D36EBF /* Build configuration list for PBXNativeTarget "SmartERTests" */;
+			buildPhases = (
+				5051F7342E36E69600D36EBF /* Sources */,
+				5051F7352E36E69600D36EBF /* Frameworks */,
+				5051F7362E36E69600D36EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5051F73D2E36E69600D36EBF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5051F7392E36E69600D36EBF /* SmartERTests */,
+			);
+			name = SmartERTests;
+			packageProductDependencies = (
+			);
+			productName = SmartERTests;
+			productReference = 5051F7382E36E69600D36EBF /* SmartERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		506DF6F32E2469A50051B826 /* SmartER */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 506DF7012E2469A70051B826 /* Build configuration list for PBXNativeTarget "SmartER" */;
 			buildPhases = (
 				506DF6F02E2469A50051B826 /* Sources */,
-				506DF6F12E2469A50051B826 /* Frameworks */,
 				506DF6F22E2469A50051B826 /* Resources */,
+				5051F6FE2E36630F00D36EBF /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +151,6 @@
 				506DF6F62E2469A50051B826 /* SmartER */,
 			);
 			name = SmartER;
-			packageProductDependencies = (
-			);
 			productName = SmartER;
 			productReference = 506DF6F42E2469A50051B826 /* SmartER.app */;
 			productType = "com.apple.product-type.application";
@@ -80,6 +165,10 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					5051F7372E36E69600D36EBF = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 506DF6F32E2469A50051B826;
+					};
 					506DF6F32E2469A50051B826 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -94,27 +183,46 @@
 			);
 			mainGroup = 506DF6EB2E2469A50051B826;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				50E131E92E32E4670076071D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 506DF6F52E2469A50051B826 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				506DF6F32E2469A50051B826 /* SmartER */,
+				5051F7372E36E69600D36EBF /* SmartERTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		506DF6F22E2469A50051B826 /* Resources */ = {
+		5051F7362E36E69600D36EBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		506DF6F22E2469A50051B826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E131F12E32E9590076071D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5051F7342E36E69600D36EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		506DF6F02E2469A50051B826 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +232,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5051F73D2E36E69600D36EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506DF6F32E2469A50051B826 /* SmartER */;
+			targetProxy = 5051F73C2E36E69600D36EBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5051F73F2E36E69600D36EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XDS6765LMJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rai.com.SmartERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartER";
+			};
+			name = Debug;
+		};
+		5051F7402E36E69600D36EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XDS6765LMJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rai.com.SmartERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartER";
+			};
+			name = Release;
+		};
 		506DF6FF2E2469A70051B826 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -256,11 +408,15 @@
 				DEVELOPMENT_TEAM = XDS6765LMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartER/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartER;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +440,15 @@
 				DEVELOPMENT_TEAM = XDS6765LMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartER/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartER;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +465,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5051F73E2E36E69600D36EBF /* Build configuration list for PBXNativeTarget "SmartERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5051F73F2E36E69600D36EBF /* Debug */,
+				5051F7402E36E69600D36EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		506DF6EF2E2469A50051B826 /* Build configuration list for PBXProject "SmartER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -324,6 +493,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50E131E92E32E4670076071D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5051F6FF2E36631A00D36EBF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50E131E92E32E4670076071D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5051F7012E36632400D36EBF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50E131E92E32E4670076071D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5051F7032E36632D00D36EBF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50E131E92E32E4670076071D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5051F7052E36634800D36EBF /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50E131E92E32E4670076071D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 506DF6EC2E2469A50051B826 /* Project object */;
 }
